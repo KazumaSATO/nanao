@@ -1,14 +1,24 @@
 package com.ranceworks.nanao.vsm
 
+import java.util
+
 import com.atilika.kuromoji.ipadic.{Token, Tokenizer}
 import collection.JavaConversions._
 
 import scala.collection.mutable
 
 
-object SimilarityCalculator {
+object SimilarityCalc {
 
   private val tokenizer = new Tokenizer()
+
+  def calcSimilarity(text: String, compared: java.util.Map[String, String]): java.util.List[TitleScore] = {
+    val rtn = new util.ArrayList[TitleScore]()
+    calcSimilarity(text, compared.toMap).foreach(titleScore => {
+      rtn.add(new TitleScore(titleScore._1, titleScore._2))
+    })
+    rtn
+  }
 
   def calcSimilarity(text: String, compared: Map[String, String]): List[(String, Double)] = {
     def getSurfaces(tokens: List[Token]) = tokens.map(t => t.getSurface)
