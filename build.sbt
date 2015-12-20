@@ -4,7 +4,7 @@ lazy val root = (project in file(".")).
 
     organization := "com.ranceworks",
 
-    version := "1.0",
+    version := "1.0-SNAPSHOT",
 
     scalaVersion := "2.11.7",
 
@@ -19,7 +19,7 @@ lazy val root = (project in file(".")).
     publishTo := {
       val nexus = "https://oss.sonatype.org/"
       if (isSnapshot.value)
-        Some("snapshots" at nexus + "content/repositories/snapshots")
+        Some(Resolver.file("file",  new File(Path.userHome.absolutePath+"/.m2/repository")))
       else
         Some("releases"  at nexus + "service/local/staging/deploy/maven2")
     },
