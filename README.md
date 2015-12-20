@@ -1,7 +1,7 @@
 # nanao
 
 ## About
-Japanese text similarity calculator based on tf-idf
+A Japanese text similarity calculator based on tf-idf
 
 ## Usage
 
