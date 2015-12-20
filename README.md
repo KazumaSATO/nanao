@@ -1,12 +1,12 @@
 # nanao
 
 ## About
-A Japanese text similarity calculator based on tf-idf
+Japanese text similarity calculator based on tf-idf
 
 ## Usage
 
 ```java
-// A japanese text.
+// Japanese text.
 String text = "徒然なるままに、日暮らし硯（すずり）に 向かいて、心に映りゆく由無し事を";
 
 //  title-text pairs, which you want to know how they are similar to a given text.
