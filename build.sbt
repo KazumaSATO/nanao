@@ -4,7 +4,7 @@ lazy val root = (project in file(".")).
 
     organization := "com.ranceworks",
 
-    version := "1.0-SNAPSHOT",
+    version := "1.0",
 
     scalaVersion := "2.11.7",
 
@@ -27,7 +27,7 @@ lazy val root = (project in file(".")).
     sonatypeProfileName := "com.ranceworks",
 
     pomExtra := (
-      <url>https://github.com/KazumaSATO/nanao</url>
+      <url>https://github.com/satokazuma/nanao</url>
         <licenses>
           <license>
             <name>The MIT License</name>
@@ -36,13 +36,13 @@ lazy val root = (project in file(".")).
           </license>
         </licenses>
         <scm>
-          <url>https://github.com/KazumaSATO/nanao</url>
-          <connection>scm:git:https://github.com/KazumaSATO/nanao.git</connection>
+          <url>https://github.com/satokazuma/nanao</url>
+          <connection>https://github.com/satokazuma/nanao.git</connection>
         </scm>
         <developers>
           <developer>
-            <id>kzstm</id>
-            <name>Kazuma SATO</name>
+            <id>satokazuma</id>
+            <name>Sato Kazuma</name>
             <url>http://ranceworks.com</url>
           </developer>
         </developers>
