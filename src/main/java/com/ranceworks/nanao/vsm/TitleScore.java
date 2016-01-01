@@ -6,7 +6,8 @@ public class TitleScore {
     private double score;
 
     TitleScore(String key, double score) {
-
+        this.key = key;
+        this.score = score;
     }
 
     public String getKey() {
